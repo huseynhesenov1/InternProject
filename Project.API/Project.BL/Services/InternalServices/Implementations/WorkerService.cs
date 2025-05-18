@@ -4,40 +4,32 @@ using Project.BL.Models;
 using Project.BL.Services.InternalServices.Abstractions;
 using Project.Core.Entities;
 using Project.DAL.Repositories.Abstractions;
+using Project.DAL.Repositories.Abstractions.Worker;
 
 namespace Project.BL.Services.InternalServices.Implementations
 {
     public class WorkerService : IWorkerService
     {
-        private readonly IReadRepository<Worker> _workerReadRepository;
-        private readonly IWriteRepository<Worker> _workerWriteRepository;
-        private readonly IReadRepository<District> _districtReadRepository;
+        private readonly IWorkerReadRepository _workerReadRepository;
+        private readonly IWorkerWriteRepository _workerWriteRepository;
+      
         private readonly IJwtService _jwtService;
 
-        public WorkerService(
-            IReadRepository<Worker> workerReadRepository,
-            IWriteRepository<Worker> workerWriteRepository,
-            IReadRepository<District> districtReadRepository,
-            IJwtService jwtService)
+        public WorkerService(IJwtService jwtService, IWorkerWriteRepository workerWriteRepository, IWorkerReadRepository workerReadRepository)
         {
-            _workerReadRepository = workerReadRepository;
-            _workerWriteRepository = workerWriteRepository;
-            _districtReadRepository = districtReadRepository;
             _jwtService = jwtService;
+            _workerWriteRepository = workerWriteRepository;
+            _workerReadRepository = workerReadRepository;
         }
 
         public async Task<ApiResponse<WorkerCreateResponseDTO>> CreateAsync(WorkerCreateDTO workerCreateDTO)
         {
             try
             {
-                // Check if district exists
-                var district = await _districtReadRepository.GetByIdAsync(workerCreateDTO.DistrictId, true);
-                if (district == null)
-                {
-                    return ApiResponse<WorkerCreateResponseDTO>.Fail("District not found", "Invalid district ID");
-                }
+             
+                
 
-                // Check if worker with same FinCode already exists
+                
                 var existingWorker = await _workerReadRepository.Table
                     .FirstOrDefaultAsync(w => w.FinCode == workerCreateDTO.FinCode && !w.IsDeleted);
                 if (existingWorker != null)
@@ -56,11 +48,10 @@ namespace Project.BL.Services.InternalServices.Implementations
                 await _workerWriteRepository.CreateAsync(worker);
                 await _workerWriteRepository.SaveChangeAsync();
 
-                // Generate JWT token
+               
                 var token = _jwtService.GenerateToken(worker);
-                worker.WorkerToken = token;
-                _workerWriteRepository.Update(worker);
-                await _workerWriteRepository.SaveChangeAsync();
+               
+              
 
                 return ApiResponse<WorkerCreateResponseDTO>.Success(
                     new WorkerCreateResponseDTO
@@ -87,12 +78,7 @@ namespace Project.BL.Services.InternalServices.Implementations
                     return ApiResponse<bool>.Fail("Worker not found", "Invalid worker ID");
                 }
 
-                // Check if district exists
-                var district = await _districtReadRepository.GetByIdAsync(workerUpdateDTO.DistrictId, true);
-                if (district == null)
-                {
-                    return ApiResponse<bool>.Fail("District not found", "Invalid district ID");
-                }
+              
 
                 // Check if another worker with same FinCode exists
                 var existingWorker = await _workerReadRepository.Table
@@ -106,7 +92,7 @@ namespace Project.BL.Services.InternalServices.Implementations
                 worker.FullName = workerUpdateDTO.FullName;
                 worker.BirthDate = workerUpdateDTO.BirthDate;
                 worker.DistrictId = workerUpdateDTO.DistrictId;
-                worker.UpdatedAt = DateTime.UtcNow;
+                worker.UpdatedAt = DateTime.UtcNow.AddHours(4);
 
                 _workerWriteRepository.Update(worker);
                 await _workerWriteRepository.SaveChangeAsync();
@@ -126,7 +112,7 @@ namespace Project.BL.Services.InternalServices.Implementations
             try
             {
                 var query = _workerReadRepository.Table
-                    .Include(w => w.District)
+                    //.Include(w => w.District)
                     .Where(w => !w.IsDeleted);
 
                 // Apply filters
@@ -149,12 +135,12 @@ namespace Project.BL.Services.InternalServices.Implementations
                     .Select(w => new WorkerDTO
                     {
                         WorkerId = w.Id,
-                        WorkerToken = w.WorkerToken,
+                        //WorkerToken = w.WorkerToken,
                         FinCode = w.FinCode,
                         FullName = w.FullName,
                         BirthDate = w.BirthDate,
                         DistrictId = w.DistrictId,
-                        DistrictName = w.District.Name
+                        //DistrictName = w.District.Name
                     })
                     .ToListAsync();
 
@@ -190,12 +176,12 @@ namespace Project.BL.Services.InternalServices.Implementations
                 var workerDto = new WorkerDTO
                 {
                     WorkerId = worker.Id,
-                    WorkerToken = worker.WorkerToken,
+                    //WorkerToken = worker.WorkerToken,
                     FinCode = worker.FinCode,
                     FullName = worker.FullName,
                     BirthDate = worker.BirthDate,
                     DistrictId = worker.DistrictId,
-                    DistrictName = worker.District.Name
+                    //DistrictName = worker.District.Name
                 };
 
                 return ApiResponse<WorkerDTO>.Success(workerDto, "Worker retrieved successfully");
@@ -233,58 +219,15 @@ namespace Project.BL.Services.InternalServices.Implementations
             return await _workerReadRepository.GetAllAsync(false);
         }
 
-        public async Task<ICollection<Worker>> GetAllDeletedAsync()
-        {
-            return await _workerReadRepository.GetAllAsync(true);
-        }
+        
 
-        public async Task<Worker> RestoreAsync(int id)
-        {
-            var worker = await _workerReadRepository.GetByIdAsync(id, true);
-            if (worker == null)
-                throw new Exception("Worker not found");
+       
 
-            _workerWriteRepository.Restore(worker);
-            await _workerWriteRepository.SaveChangeAsync();
-            return worker;
-        }
+        
 
-        public async Task<Worker> GetByIdAsync(int id)
-        {
-            return await _workerReadRepository.GetByIdAsync(id, true);
-        }
+       
 
-        public async Task<Worker> CreateAsync(WorkerCreateDTO workerCreateDTO)
-        {
-            var worker = new Worker
-            {
-                FinCode = workerCreateDTO.FinCode,
-                FullName = workerCreateDTO.FullName,
-                BirthDate = workerCreateDTO.BirthDate,
-                DistrictId = workerCreateDTO.DistrictId
-            };
-
-            await _workerWriteRepository.CreateAsync(worker);
-            await _workerWriteRepository.SaveChangeAsync();
-            return worker;
-        }
-
-        public async Task<Worker> UpdateAsync(int id, WorkerUpdateDTO workerUpdateDTO)
-        {
-            var worker = await _workerReadRepository.GetByIdAsync(id, true);
-            if (worker == null)
-                throw new Exception("Worker not found");
-
-            worker.FinCode = workerUpdateDTO.FinCode;
-            worker.FullName = workerUpdateDTO.FullName;
-            worker.BirthDate = workerUpdateDTO.BirthDate;
-            worker.DistrictId = workerUpdateDTO.DistrictId;
-            worker.UpdatedAt = DateTime.UtcNow;
-
-            _workerWriteRepository.Update(worker);
-            await _workerWriteRepository.SaveChangeAsync();
-            return worker;
-        }
+        
 
         public async Task<Worker> SoftDeleteAsync(int id)
         {

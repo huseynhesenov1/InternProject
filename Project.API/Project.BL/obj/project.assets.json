@@ -2755,11 +2755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Project.BL.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Project.BL.csproj",
       "projectName": "Project.BL",
-      "projectPath": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Project.BL.csproj",
+      "projectPath": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Project.BL.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\obj\\",
+      "outputPath": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2780,8 +2780,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Project.DAL.csproj": {
-              "projectPath": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Project.DAL.csproj"
+            "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Project.DAL.csproj": {
+              "projectPath": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Project.DAL.csproj"
             }
           }
         }

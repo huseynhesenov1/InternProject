@@ -17,30 +17,23 @@ namespace Project.API.Controllers
             _workerService = workerService;
         }
 
-        /// <summary>
-        /// Create a new worker (CMS endpoint)
-        /// </summary>
-        [Authorize(Roles = "Admin")]
+        
+        
         [HttpPost]
         public async Task<ApiResponse<WorkerCreateResponseDTO>> Create([FromBody] WorkerCreateDTO workerCreateDTO)
         {
             return await _workerService.CreateAsync(workerCreateDTO);
         }
 
-        /// <summary>
-        /// Update an existing worker (CMS endpoint)
-        /// </summary>
-        [Authorize(Roles = "Admin")]
+       
         [HttpPut("{id}")]
         public async Task<ApiResponse<bool>> Update(int id, [FromBody] WorkerUpdateDTO workerUpdateDTO)
         {
             return await _workerService.UpdateAsync(id, workerUpdateDTO);
         }
 
-        /// <summary>
-        /// Get workers with pagination and filtering (CMS endpoint)
-        /// </summary>
-        [Authorize(Roles = "Admin")]
+        
+        
         [HttpGet]
         public async Task<ApiResponse<PaginatedResponse<WorkerDTO>>> GetWorkers(
             [FromQuery] int pageNo = 1,
@@ -53,9 +46,7 @@ namespace Project.API.Controllers
             return await _workerService.GetWorkersAsync(pageNo, pageSize, finCode, fullName, birthDate, districtId);
         }
 
-        /// <summary>
-        /// Get worker by ID (CMS endpoint)
-        /// </summary>
+       
         [Authorize(Roles = "Admin")]
         [HttpGet("{id}")]
         public async Task<ApiResponse<WorkerDTO>> GetById(int id)
