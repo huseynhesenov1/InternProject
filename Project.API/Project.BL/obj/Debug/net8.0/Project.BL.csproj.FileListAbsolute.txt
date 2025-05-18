@@ -1,0 +1,17 @@
+C:\Users\ACER\source\repos\Project.API\Project.BL\bin\Debug\net8.0\Project.BL.deps.json
+C:\Users\ACER\source\repos\Project.API\Project.BL\bin\Debug\net8.0\Project.BL.dll
+C:\Users\ACER\source\repos\Project.API\Project.BL\bin\Debug\net8.0\Project.BL.pdb
+C:\Users\ACER\source\repos\Project.API\Project.BL\bin\Debug\net8.0\Project.Core.dll
+C:\Users\ACER\source\repos\Project.API\Project.BL\bin\Debug\net8.0\Project.DAL.dll
+C:\Users\ACER\source\repos\Project.API\Project.BL\bin\Debug\net8.0\Project.DAL.pdb
+C:\Users\ACER\source\repos\Project.API\Project.BL\bin\Debug\net8.0\Project.Core.pdb
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.AssemblyInfoInputs.cache
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.AssemblyInfo.cs
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.csproj.Up2Date
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.dll
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\refint\Project.BL.dll
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\Project.BL.pdb
+C:\Users\ACER\source\repos\Project.API\Project.BL\obj\Debug\net8.0\ref\Project.BL.dll

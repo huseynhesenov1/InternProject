@@ -1,0 +1,413 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\Project.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.bl\\services\\internalservices\\abstractions\\iworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\abstractions\\iworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.bl\\dtos\\workerdtos\\workerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\workerdtos\\workerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.bl\\dtos\\workerdtos\\workercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\workerdtos\\workercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.core\\entities\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.bl\\services\\internalservices\\implementations\\workerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\implementations\\workerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\registrationdal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\registrationdal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\implementations\\worker\\workerreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\implementations\\worker\\workerreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\implementations\\worker\\workerwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\implementations\\worker\\workerwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\abstractions\\worker\\iworkerwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\worker\\iworkerwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\abstractions\\worker\\iworkerreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\worker\\iworkerreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.core\\entities\\commons\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\commons\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.core\\entities\\commons\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\commons\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|solutionrelative:project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.bl\\registrationbl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\registrationbl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.bl\\project.bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\project.bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\abstractions\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\implementations\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\implementations\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\repositories\\implementations\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\implementations\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|solutionrelative:project.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\migrations\\20250518201939_workertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\migrations\\20250518201939_workertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\source\\repos\\project.api\\project.dal\\migrations\\20250518201050_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\migrations\\20250518201050_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorkerUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerUpdateDTO.cs",
+              "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerUpdateDTO.cs",
+              "RelativeToolTip": "Project.BL\\DTOs\\WorkerDTOs\\WorkerUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:23:47.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkerCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateDTO.cs",
+              "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateDTO.cs",
+              "RelativeToolTip": "Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:23:27.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorkerService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
+              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
+              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:20:55.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IWorkerService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
+              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
+              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:20:35.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250518201939_workertable.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Migrations\\20250518201939_workertable.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250518201939_workertable.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Migrations\\20250518201939_workertable.cs",
+              "RelativeToolTip": "Project.DAL\\Migrations\\20250518201939_workertable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:19:39.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.Core\\Entities\\Worker.cs",
+              "RelativeDocumentMoniker": "Project.Core\\Entities\\Worker.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.Core\\Entities\\Worker.cs",
+              "RelativeToolTip": "Project.Core\\Entities\\Worker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:13:25.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WorkerWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\Worker\\WorkerWriteRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\Worker\\WorkerWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\Worker\\WorkerWriteRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\Worker\\WorkerWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:17:48.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IWorkerWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerWriteRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerWriteRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:17:11.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WorkerReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\Worker\\WorkerReadRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\Worker\\WorkerReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\Worker\\WorkerReadRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\Worker\\WorkerReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:16:56.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "RelativeToolTip": "Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:08:21.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "Project.DAL\\Contexts\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:39:55.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IWorkerReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerReadRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerReadRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:15:37.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250518201050_init.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Migrations\\20250518201050_init.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250518201050_init.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Migrations\\20250518201050_init.cs",
+              "RelativeToolTip": "Project.DAL\\Migrations\\20250518201050_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:10:50.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "RelativeToolTip": "Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:07:04.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.API\\Program.cs",
+              "RelativeDocumentMoniker": "Project.API\\Program.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.API\\Program.cs",
+              "RelativeToolTip": "Project.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:38:19.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.Core\\Entities\\Commons\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Project.Core\\Entities\\Commons\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.Core\\Entities\\Commons\\BaseEntity.cs",
+              "RelativeToolTip": "Project.Core\\Entities\\Commons\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:47:57.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseAuditableEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.Core\\Entities\\Commons\\BaseAuditableEntity.cs",
+              "RelativeDocumentMoniker": "Project.Core\\Entities\\Commons\\BaseAuditableEntity.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.Core\\Entities\\Commons\\BaseAuditableEntity.cs",
+              "RelativeToolTip": "Project.Core\\Entities\\Commons\\BaseAuditableEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:48:30.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:46:35.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:46:25.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Project.BL.csproj",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Project.BL.csproj",
+              "RelativeDocumentMoniker": "Project.BL\\Project.BL.csproj",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.BL\\Project.BL.csproj",
+              "RelativeToolTip": "Project.BL\\Project.BL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-18T19:37:29.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\ReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:54:48.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\WriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:55:47.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:46:15.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Project.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\Project.API\\Project.API\\appsettings.json",
+              "RelativeToolTip": "Project.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-18T19:43:14.756Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
