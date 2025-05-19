@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Project.DAL.Repositories.Abstractions.Product;
 using Project.DAL.Repositories.Abstractions.Worker;
+using Project.DAL.Repositories.Implementations.Product;
 using Project.DAL.Repositories.Implementations.Worker;
 
 namespace Project.DAL.RegistrationDAL
@@ -11,6 +13,8 @@ namespace Project.DAL.RegistrationDAL
 
             services.AddScoped<IWorkerReadRepository, WorkerReadRepository>();
             services.AddScoped<IWorkerWriteRepository, WorkerWriteRepository>();
+            services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+            services.AddScoped<IProductReadRepository, ProductReadRepository>();
 
         }
     }

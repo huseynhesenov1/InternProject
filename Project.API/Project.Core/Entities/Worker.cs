@@ -1,27 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Project.Core.Entities.Commons;
+﻿using Project.Core.Entities.Commons;
 
 namespace Project.Core.Entities
 {
     public class Worker : BaseAuditableEntity
     {
-      
-        
-        
         public string FinCode { get; set; }
-        
-      
         public string FullName { get; set; }
-        
-        
         public DateTime BirthDate { get; set; }
-        
-       
         public int DistrictId { get; set; }
-        
-        //public string WorkerToken { get; set; }
-        
-        // Navigation property
-        //public virtual District District { get; set; }
     }
 }

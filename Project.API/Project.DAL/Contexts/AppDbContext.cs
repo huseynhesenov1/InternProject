@@ -9,5 +9,6 @@ namespace Project.DAL.Contexts
 
         }
         public DbSet<Core.Entities.Worker> Workers { get; set; }
+        public DbSet<Core.Entities.Product> Products { get; set; }
     }
 }

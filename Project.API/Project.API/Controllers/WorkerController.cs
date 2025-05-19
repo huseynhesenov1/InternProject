@@ -45,16 +45,21 @@ namespace Project.API.Controllers
             var result = await _workerService.GetPaginatedAsync(@params);
             return Ok(result);
         }
+        [HttpGet("Search")]
+        public async Task<IActionResult> GetSearch([FromQuery] WorkerSearchDTO workerSearchDTO)
+        {
+            var result = await _workerService.SearchProductsAsync(workerSearchDTO);
+            return Ok(result);
+        }
 
-       
         [HttpGet("{id}")]
         public async Task<ApiResponse<WorkerDTO>> GetById(int id)
         {
             return await _workerService.GetByIdAsync(id);
         }
 
-       
-        
+
+
         [HttpDelete("{id}")]
         public async Task<ApiResponse<bool>> Delete(int id)
         {

@@ -12,6 +12,7 @@ namespace Project.BL.RegistrationBL
         {
 
             services.AddScoped<IWorkerService, WorkerService>();
+            services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IJwtService, JwtService>();
         }
     }

@@ -5,7 +5,6 @@ using Project.BL.Services.ExternalServices.Abstractions;
 using Project.BL.Services.InternalServices.Abstractions;
 using Project.Core.Entities;
 using Project.Core.Entities.Commons;
-using Project.DAL.Repositories.Abstractions;
 using Project.DAL.Repositories.Abstractions.Worker;
 
 namespace Project.BL.Services.InternalServices.Implementations
@@ -14,7 +13,7 @@ namespace Project.BL.Services.InternalServices.Implementations
     {
         private readonly IWorkerReadRepository _workerReadRepository;
         private readonly IWorkerWriteRepository _workerWriteRepository;
-      
+
         private readonly IJwtService _jwtService;
 
         public WorkerService(IJwtService jwtService, IWorkerWriteRepository workerWriteRepository, IWorkerReadRepository workerReadRepository)
@@ -59,7 +58,6 @@ namespace Project.BL.Services.InternalServices.Implementations
                 return ApiResponse<WorkerCreateResponseDTO>.Fail(ex.Message, "Error creating worker");
             }
         }
-
         public async Task<ApiResponse<bool>> UpdateAsync(int id, WorkerUpdateDTO workerUpdateDTO)
         {
             try
@@ -101,19 +99,13 @@ namespace Project.BL.Services.InternalServices.Implementations
             var allCategories = await _workerReadRepository.GetAllAsync(false);
 
             var filtered = allCategories
-                //.OrderByDescending(c => c.CreateAt)
                 .Skip((@params.PageNumber - 1) * @params.PageSize)
                 .Take(@params.PageSize)
                 .ToList();
-
             int totalCount = allCategories.Count;
 
             return new PagedResult<Worker>(filtered, totalCount, @params.PageNumber, @params.PageSize);
         }
-
-
-
-       
 
         public async Task<ApiResponse<WorkerDTO>> GetByIdAsync(int id)
         {
@@ -163,7 +155,37 @@ namespace Project.BL.Services.InternalServices.Implementations
             }
         }
 
-       
-        
+
+        public async Task<ICollection<WorkerDTO>> SearchProductsAsync(WorkerSearchDTO workerSearchDTO)
+        {
+            var query = await _workerReadRepository.GetAllAsync(false);
+
+            query = query
+    .Where(p =>
+        (string.IsNullOrWhiteSpace(workerSearchDTO.FullName) ||
+         p.FullName.Contains(workerSearchDTO.FullName, StringComparison.OrdinalIgnoreCase)) &&
+
+        (string.IsNullOrWhiteSpace(workerSearchDTO.FinCode) ||
+         p.FinCode.Contains(workerSearchDTO.FinCode, StringComparison.OrdinalIgnoreCase)) &&
+
+        (workerSearchDTO.DistrictId == null ||
+         p.DistrictId == workerSearchDTO.DistrictId) &&
+
+        (workerSearchDTO.BirthDate == null ||
+         p.BirthDate == workerSearchDTO.BirthDate)
+    )
+    .ToList();
+
+            var workerDTOs = query.Select(p => new WorkerDTO
+            {
+                WorkerId = p.Id,
+                FullName = p.FullName,
+                FinCode = p.FinCode,
+                BirthDate = p.BirthDate,
+                DistrictId = p.DistrictId,
+            }).ToList();
+
+            return workerDTOs;
+        }
     }
 }
