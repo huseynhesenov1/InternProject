@@ -27,57 +27,6 @@
   },
   {
     "ContainingType": "Project.API.Controllers.WorkerController",
-    "Method": "GetWorkers",
-    "RelativePath": "api/Worker",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "pageNo",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "finCode",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "fullName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "birthDate",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "districtId",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Project.BL.Models.ApiResponse\u00601[[Project.BL.Services.InternalServices.Abstractions.PaginatedResponse\u00601[[Project.BL.DTOs.WorkerDTOs.WorkerDTO, Project.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Project.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Project.API.Controllers.WorkerController",
     "Method": "Update",
     "RelativePath": "api/Worker/{id}",
     "HttpMethod": "PUT",
@@ -161,15 +110,15 @@
   },
   {
     "ContainingType": "Project.API.Controllers.WorkerController",
-    "Method": "GetProfile",
-    "RelativePath": "api/Worker/profile",
+    "Method": "GetAllWorkers",
+    "RelativePath": "api/Worker/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Project.BL.Models.ApiResponse\u00601[[Project.BL.DTOs.WorkerDTOs.WorkerDTO, Project.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Project.Core.Entities.Worker, Project.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -181,28 +130,23 @@
   },
   {
     "ContainingType": "Project.API.Controllers.WorkerController",
-    "Method": "UpdateProfile",
-    "RelativePath": "api/Worker/profile",
-    "HttpMethod": "PUT",
+    "Method": "GetPaginated",
+    "RelativePath": "api/Worker/Paginated",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "workerUpdateDTO",
-        "Type": "Project.BL.DTOs.WorkerDTOs.WorkerUpdateDTO",
-        "IsRequired": true
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Project.BL.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

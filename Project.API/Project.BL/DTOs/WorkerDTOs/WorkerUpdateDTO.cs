@@ -1,6 +1,6 @@
 ﻿namespace Project.BL.DTOs.WorkerDTOs
 {
-   public record WorkerUpdateDTO
+    public record WorkerUpdateDTO
     {
         public string FinCode { get; set; }
         public string FullName { get; set; }

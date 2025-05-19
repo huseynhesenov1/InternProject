@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Project.BL.DTOs.WorkerDTOs;
 using Project.BL.Models;
+using Project.BL.Services.ExternalServices.Abstractions;
 using Project.BL.Services.InternalServices.Abstractions;
 using Project.Core.Entities;
+using Project.Core.Entities.Commons;
 using Project.DAL.Repositories.Abstractions;
 using Project.DAL.Repositories.Abstractions.Worker;
 
@@ -26,10 +28,6 @@ namespace Project.BL.Services.InternalServices.Implementations
         {
             try
             {
-             
-                
-
-                
                 var existingWorker = await _workerReadRepository.Table
                     .FirstOrDefaultAsync(w => w.FinCode == workerCreateDTO.FinCode && !w.IsDeleted);
                 if (existingWorker != null)
@@ -44,15 +42,9 @@ namespace Project.BL.Services.InternalServices.Implementations
                     BirthDate = workerCreateDTO.BirthDate,
                     DistrictId = workerCreateDTO.DistrictId
                 };
-
                 await _workerWriteRepository.CreateAsync(worker);
                 await _workerWriteRepository.SaveChangeAsync();
-
-               
                 var token = _jwtService.GenerateToken(worker);
-               
-              
-
                 return ApiResponse<WorkerCreateResponseDTO>.Success(
                     new WorkerCreateResponseDTO
                     {
@@ -78,16 +70,12 @@ namespace Project.BL.Services.InternalServices.Implementations
                     return ApiResponse<bool>.Fail("Worker not found", "Invalid worker ID");
                 }
 
-              
-
-                // Check if another worker with same FinCode exists
                 var existingWorker = await _workerReadRepository.Table
                     .FirstOrDefaultAsync(w => w.FinCode == workerUpdateDTO.FinCode && w.Id != id && !w.IsDeleted);
                 if (existingWorker != null)
                 {
                     return ApiResponse<bool>.Fail("Worker with this FinCode already exists", "Duplicate FinCode");
                 }
-
                 worker.FinCode = workerUpdateDTO.FinCode;
                 worker.FullName = workerUpdateDTO.FullName;
                 worker.BirthDate = workerUpdateDTO.BirthDate;
@@ -104,70 +92,34 @@ namespace Project.BL.Services.InternalServices.Implementations
                 return ApiResponse<bool>.Fail(ex.Message, "Error updating worker");
             }
         }
-
-        public async Task<ApiResponse<PaginatedResponse<WorkerDTO>>> GetWorkersAsync(
-            int pageNo, int pageSize, string finCode = null, string fullName = null, 
-            DateTime? birthDate = null, int? districtId = null)
+        public async Task<ICollection<Worker>> GetAllAsync()
         {
-            try
-            {
-                var query = _workerReadRepository.Table
-                    //.Include(w => w.District)
-                    .Where(w => !w.IsDeleted);
-
-                // Apply filters
-                if (!string.IsNullOrWhiteSpace(finCode))
-                    query = query.Where(w => w.FinCode.Contains(finCode));
-                if (!string.IsNullOrWhiteSpace(fullName))
-                    query = query.Where(w => w.FullName.Contains(fullName));
-                if (birthDate.HasValue)
-                    query = query.Where(w => w.BirthDate.Date == birthDate.Value.Date);
-                if (districtId.HasValue)
-                    query = query.Where(w => w.DistrictId == districtId.Value);
-
-                var totalCount = await query.CountAsync();
-                var filteredCount = totalCount;
-
-                // Apply pagination
-                var items = await query
-                    .Skip((pageNo - 1) * pageSize)
-                    .Take(pageSize)
-                    .Select(w => new WorkerDTO
-                    {
-                        WorkerId = w.Id,
-                        //WorkerToken = w.WorkerToken,
-                        FinCode = w.FinCode,
-                        FullName = w.FullName,
-                        BirthDate = w.BirthDate,
-                        DistrictId = w.DistrictId,
-                        //DistrictName = w.District.Name
-                    })
-                    .ToListAsync();
-
-                var pageCount = (int)Math.Ceiling(totalCount / (double)pageSize);
-
-                return ApiResponse<PaginatedResponse<WorkerDTO>>.Success(
-                    new PaginatedResponse<WorkerDTO>
-                    {
-                        TotalCount = totalCount,
-                        FilteredCount = filteredCount,
-                        PageCount = pageCount,
-                        Items = items
-                    },
-                    "Workers retrieved successfully"
-                );
-            }
-            catch (Exception ex)
-            {
-                return ApiResponse<PaginatedResponse<WorkerDTO>>.Fail(ex.Message, "Error retrieving workers");
-            }
+            return await _workerReadRepository.GetAllAsync(false);
         }
+        public async Task<PagedResult<Worker>> GetPaginatedAsync(PaginationParams @params)
+        {
+            var allCategories = await _workerReadRepository.GetAllAsync(false);
+
+            var filtered = allCategories
+                //.OrderByDescending(c => c.CreateAt)
+                .Skip((@params.PageNumber - 1) * @params.PageSize)
+                .Take(@params.PageSize)
+                .ToList();
+
+            int totalCount = allCategories.Count;
+
+            return new PagedResult<Worker>(filtered, totalCount, @params.PageNumber, @params.PageSize);
+        }
+
+
+
+       
 
         public async Task<ApiResponse<WorkerDTO>> GetByIdAsync(int id)
         {
             try
             {
-                var worker = await _workerReadRepository.GetByIdAsync(id, true, "District");
+                var worker = await _workerReadRepository.GetByIdAsync(id, true);
                 if (worker == null || worker.IsDeleted)
                 {
                     return ApiResponse<WorkerDTO>.Fail("Worker not found", "Invalid worker ID");
@@ -176,12 +128,10 @@ namespace Project.BL.Services.InternalServices.Implementations
                 var workerDto = new WorkerDTO
                 {
                     WorkerId = worker.Id,
-                    //WorkerToken = worker.WorkerToken,
                     FinCode = worker.FinCode,
                     FullName = worker.FullName,
                     BirthDate = worker.BirthDate,
                     DistrictId = worker.DistrictId,
-                    //DistrictName = worker.District.Name
                 };
 
                 return ApiResponse<WorkerDTO>.Success(workerDto, "Worker retrieved successfully");
@@ -213,42 +163,7 @@ namespace Project.BL.Services.InternalServices.Implementations
             }
         }
 
-        // Implementing the old interface methods for backward compatibility
-        public async Task<ICollection<Worker>> GetAllAsync()
-        {
-            return await _workerReadRepository.GetAllAsync(false);
-        }
-
-        
-
        
-
         
-
-       
-
-        
-
-        public async Task<Worker> SoftDeleteAsync(int id)
-        {
-            var worker = await _workerReadRepository.GetByIdAsync(id, true);
-            if (worker == null)
-                throw new Exception("Worker not found");
-
-            _workerWriteRepository.SoftDelete(worker);
-            await _workerWriteRepository.SaveChangeAsync();
-            return worker;
-        }
-
-        public async Task<Worker> HardDeleteAsync(int id)
-        {
-            var worker = await _workerReadRepository.GetByIdAsync(id, true);
-            if (worker == null)
-                throw new Exception("Worker not found");
-
-            _workerWriteRepository.HardDelete(worker);
-            await _workerWriteRepository.SaveChangeAsync();
-            return worker;
-        }
     }
 }

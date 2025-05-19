@@ -1,12 +1,12 @@
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using Project.BL.Services.ExternalServices.Abstractions;
+using Project.Core.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using Project.BL.Services.InternalServices.Abstractions;
-using Project.Core.Entities;
 
-namespace Project.BL.Services.InternalServices.Implementations
+namespace Project.BL.Services.ExternalServices.Implementations
 {
     public class JwtService : IJwtService
     {
@@ -42,4 +42,4 @@ namespace Project.BL.Services.InternalServices.Implementations
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
-} 
+}

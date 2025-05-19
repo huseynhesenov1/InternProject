@@ -51,83 +51,6 @@
             }
           }
         }
-      },
-      "get": {
-        "tags": [
-          "Worker"
-        ],
-        "parameters": [
-          {
-            "name": "pageNo",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1
-            }
-          },
-          {
-            "name": "pageSize",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 10
-            }
-          },
-          {
-            "name": "finCode",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "fullName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "birthDate",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          {
-            "name": "districtId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/WorkerDTOPaginatedResponseApiResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/WorkerDTOPaginatedResponseApiResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/WorkerDTOPaginatedResponseApiResponse"
-                }
-              }
-            }
-          }
-        }
       }
     },
     "/api/Worker/{id}": {
@@ -265,7 +188,7 @@
         }
       }
     },
-    "/api/Worker/profile": {
+    "/api/Worker/all": {
       "get": {
         "tags": [
           "Worker"
@@ -276,66 +199,59 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/WorkerDTOApiResponse"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Worker"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/WorkerDTOApiResponse"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Worker"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/WorkerDTOApiResponse"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Worker"
+                  }
                 }
               }
             }
           }
         }
-      },
-      "put": {
+      }
+    },
+    "/api/Worker/Paginated": {
+      "get": {
         "tags": [
           "Worker"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/WorkerUpdateDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/WorkerUpdateDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/WorkerUpdateDTO"
-              }
+        "parameters": [
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/BooleanApiResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BooleanApiResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BooleanApiResponse"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -359,6 +275,49 @@
           },
           "data": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Worker": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deletedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "finCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "districtId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -426,10 +385,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "workerToken": {
-            "type": "string",
-            "nullable": true
-          },
           "finCode": {
             "type": "string",
             "nullable": true
@@ -445,10 +400,6 @@
           "districtId": {
             "type": "integer",
             "format": "int32"
-          },
-          "districtName": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -469,51 +420,6 @@
           },
           "data": {
             "$ref": "#/components/schemas/WorkerDTO"
-          }
-        },
-        "additionalProperties": false
-      },
-      "WorkerDTOPaginatedResponse": {
-        "type": "object",
-        "properties": {
-          "totalCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "filteredCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pageCount": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/WorkerDTO"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "WorkerDTOPaginatedResponseApiResponse": {
-        "type": "object",
-        "properties": {
-          "isSuccess": {
-            "type": "boolean"
-          },
-          "message": {
-            "type": "string",
-            "nullable": true
-          },
-          "error": {
-            "type": "string",
-            "nullable": true
-          },
-          "data": {
-            "$ref": "#/components/schemas/WorkerDTOPaginatedResponse"
           }
         },
         "additionalProperties": false

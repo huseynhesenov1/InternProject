@@ -11,7 +11,7 @@ namespace Project.API.Extensions
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Project API", Version = "v1" });
 
-                // Add JWT Authentication
+                
                 c.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, new OpenApiSecurityScheme
                 {
                     Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
