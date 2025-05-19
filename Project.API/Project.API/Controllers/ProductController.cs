@@ -53,7 +53,12 @@ namespace Project.API.Controllers
         {
             return await _productService.GetByIdAsync(id);
         }
-
+        [HttpGet("Search")]
+        public async Task<IActionResult> GetSearch([FromQuery] string title)
+        {
+            var result = await _productService .SearchProductsAsync(title);
+            return Ok(result);
+        }
         [HttpDelete("{id}")]
         public async Task<ApiResponse<bool>> Delete(int id)
         {

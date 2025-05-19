@@ -7,6 +7,7 @@ namespace Project.Core.Entities
         public string FinCode { get; set; }
         public string FullName { get; set; }
         public DateTime BirthDate { get; set; }
+        public District District { get; set; }
         public int DistrictId { get; set; }
     }
 }

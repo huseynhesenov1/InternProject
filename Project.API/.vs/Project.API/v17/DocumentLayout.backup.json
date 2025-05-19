@@ -3,16 +3,100 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\implementations\\workerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\implementations\\workerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.api\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|solutionrelative:project.api\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\abstractions\\idistrictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\abstractions\\idistrictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\registrationbl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\registrationbl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\implementations\\districtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\implementations\\districtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\abstractions\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\abstractions\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\districtdtos\\districtreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\districtdtos\\districtreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\districtdtos\\districtcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\districtdtos\\districtcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\districtdtos\\districtupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\districtdtos\\districtupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Migrations\\20250519203422_distictTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project.DAL\\Migrations\\20250519203422_distictTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\registrationdal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\registrationdal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\implementations\\district\\districtwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\implementations\\district\\districtwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\implementations\\district\\districtreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\implementations\\district\\districtreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\abstractions\\district\\idistrictreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\district\\idistrictreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\abstractions\\district\\idistrictwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\district\\idistrictwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.core\\entities\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.core\\entities\\district .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\district .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|solutionrelative:project.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.api\\controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|solutionrelative:project.api\\controllers\\workercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\implementations\\workerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\implementations\\workerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\abstractions\\iworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\abstractions\\iworkerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\productdtos\\productreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\productdtos\\productreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\workerdtos\\workersearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,22 +111,6 @@
       "RelativeMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|solutionrelative:project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{189868B9-562A-4DA8-94B0-1D05173F2CB6}|Project.API\\Project.API.csproj|solutionrelative:project.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\abstractions\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\abstractions\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\services\\internalservices\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\services\\internalservices\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\productdtos\\productreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\productdtos\\productreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\productdtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\productdtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,16 +123,8 @@
       "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.core\\entities\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.core\\entities\\commons\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\commons\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\registrationbl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\registrationbl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\implementations\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,14 +155,6 @@
       "RelativeMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|solutionrelative:project.bl\\dtos\\workerdtos\\workercreateresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Migrations\\20250519141109_productTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project.DAL\\Migrations\\20250519141109_productTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\registrationdal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\registrationdal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\implementations\\product\\productwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\implementations\\product\\productwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -117,10 +169,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\abstractions\\product\\iproductreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\product\\iproductreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E96E0BE5-655A-4428-914D-8A9B4E902954}|Project.BL\\Project.BL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.bl\\dtos\\workerdtos\\workercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -175,10 +223,6 @@
       "RelativeMoniker": "D:0:0:{0E9703FF-102D-4E59-A086-D6D41C9BA7E1}|Project.Core\\Project.Core.csproj|solutionrelative:project.core\\entities\\commons\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\repositories\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\repositories\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -193,6 +237,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\migrations\\20250518201050_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\migrations\\20250518201050_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|c:\\users\\acer\\desktop\\project\\project.api\\project.dal\\migrations\\20250519141109_producttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E432058D-2587-4313-92A2-BC74BF982B77}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\migrations\\20250519141109_producttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -202,7 +250,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -214,72 +262,319 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WorkerSearchDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
-              "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
-              "RelativeToolTip": "Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DistrictController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\DistrictController.cs",
+              "RelativeDocumentMoniker": "Project.API\\Controllers\\DistrictController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\DistrictController.cs",
+              "RelativeToolTip": "Project.API\\Controllers\\DistrictController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswEgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T15:46:31.843Z",
+              "WhenOpened": "2025-05-19T20:54:16.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "DistrictReadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\DistrictDTOs\\DistrictReadDTO.cs",
+              "RelativeDocumentMoniker": "Project.BL\\DTOs\\DistrictDTOs\\DistrictReadDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\DistrictDTOs\\DistrictReadDTO.cs",
+              "RelativeToolTip": "Project.BL\\DTOs\\DistrictDTOs\\DistrictReadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:46:34.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DistrictService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\DistrictService.cs",
+              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Implementations\\DistrictService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\DistrictService.cs",
+              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Implementations\\DistrictService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:42:25.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDistrictService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IDistrictService.cs",
+              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Abstractions\\IDistrictService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IDistrictService.cs",
+              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Abstractions\\IDistrictService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:42:12.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
+              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
+              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:16:16.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
+              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:16:28.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "RelativeToolTip": "Project.BL\\RegistrationBL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:07:04.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DistrictCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\DistrictDTOs\\DistrictCreateDTO.cs",
+              "RelativeDocumentMoniker": "Project.BL\\DTOs\\DistrictDTOs\\DistrictCreateDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\DistrictDTOs\\DistrictCreateDTO.cs",
+              "RelativeToolTip": "Project.BL\\DTOs\\DistrictDTOs\\DistrictCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:40:11.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DistrictUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\DistrictDTOs\\DistrictUpdateDTO.cs",
+              "RelativeDocumentMoniker": "Project.BL\\DTOs\\DistrictDTOs\\DistrictUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\DistrictDTOs\\DistrictUpdateDTO.cs",
+              "RelativeToolTip": "Project.BL\\DTOs\\DistrictDTOs\\DistrictUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:41:29.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250519203422_distictTable.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Migrations\\20250519203422_distictTable.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250519203422_distictTable.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Migrations\\20250519203422_distictTable.cs",
+              "RelativeToolTip": "Project.DAL\\Migrations\\20250519203422_distictTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:34:22.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DistrictWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\District\\DistrictWriteRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\District\\DistrictWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\District\\DistrictWriteRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\District\\DistrictWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:32:44.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DistrictReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\District\\DistrictReadRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\District\\DistrictReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\District\\DistrictReadRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\District\\DistrictReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:32:10.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IDistrictWriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\District\\IDistrictWriteRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\District\\IDistrictWriteRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\District\\IDistrictWriteRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\District\\IDistrictWriteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:29:46.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDistrictReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\District\\IDistrictReadRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\District\\IDistrictReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\District\\IDistrictReadRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\District\\IDistrictReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:29:33.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "RelativeToolTip": "Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:08:21.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "District .cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\District .cs",
+              "RelativeDocumentMoniker": "Project.Core\\Entities\\District .cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\District .cs",
+              "RelativeToolTip": "Project.Core\\Entities\\District .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T20:27:35.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "WorkerService.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
               "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
               "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Implementations\\WorkerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAwwLwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T20:20:55.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 19,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Project.API\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Project.API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAowDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:22:58.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Worker.cs",
+              "RelativeDocumentMoniker": "Project.Core\\Entities\\Worker.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Worker.cs",
+              "RelativeToolTip": "Project.Core\\Entities\\Worker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T20:13:25.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "Project.DAL\\Contexts\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:39:55.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IReadRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T19:46:15.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "IWorkerService.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
               "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
               "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Abstractions\\IWorkerService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T20:20:35.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 20,
               "Title": "WorkerController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\WorkerController.cs",
               "RelativeDocumentMoniker": "Project.API\\Controllers\\WorkerController.cs",
               "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\WorkerController.cs",
               "RelativeToolTip": "Project.API\\Controllers\\WorkerController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAIA2wDIAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAWwDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T22:22:13.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Program.cs",
-              "RelativeDocumentMoniker": "Project.API\\Program.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Program.cs",
-              "RelativeToolTip": "Project.API\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAEwDUAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "ProductReadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
+              "RelativeDocumentMoniker": "Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
+              "RelativeToolTip": "Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:38:19.01Z",
+              "WhenOpened": "2025-05-19T14:48:22.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 25,
               "Title": "WorkerDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerDTO.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerDTO.cs",
@@ -287,64 +582,35 @@
               "RelativeToolTip": "Project.BL\\DTOs\\WorkerDTOs\\WorkerDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:34:24.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T13:34:24.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Project.API\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Project.API\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAA8wDcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Program.cs",
+              "RelativeDocumentMoniker": "Project.API\\Program.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Program.cs",
+              "RelativeToolTip": "Project.API\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAEwDUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:22:58.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T19:38:19.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
-              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
-              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Abstractions\\IProductService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowBAAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "WorkerSearchDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
+              "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
+              "RelativeToolTip": "Project.BL\\DTOs\\WorkerDTOs\\WorkerSearchDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:16:16.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T15:46:31.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
-              "RelativeDocumentMoniker": "Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
-              "RelativeToolTip": "Project.BL\\Services\\InternalServices\\Implementations\\ProductService.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAYwIAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:16:28.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductReadDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
-              "RelativeDocumentMoniker": "Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
-              "RelativeToolTip": "Project.BL\\DTOs\\ProductDTOs\\ProductReadDTO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:48:22.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 27,
               "Title": "ProductCreateDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\ProductDTOs\\ProductCreateDTO.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\ProductDTOs\\ProductCreateDTO.cs",
@@ -352,12 +618,11 @@
               "RelativeToolTip": "Project.BL\\DTOs\\ProductDTOs\\ProductCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:11:47.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:11:47.754Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 28,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Models\\ApiResponse.cs",
               "RelativeDocumentMoniker": "Project.BL\\Models\\ApiResponse.cs",
@@ -365,12 +630,11 @@
               "RelativeToolTip": "Project.BL\\Models\\ApiResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAgwAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T22:13:21.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T22:13:21.123Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 29,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Project.Core\\Entities\\Product.cs",
@@ -378,25 +642,11 @@
               "RelativeToolTip": "Project.Core\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:05:59.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:05:59.176Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Worker.cs",
-              "RelativeDocumentMoniker": "Project.Core\\Entities\\Worker.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Worker.cs",
-              "RelativeToolTip": "Project.Core\\Entities\\Worker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:13:25.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "BaseAuditableEntity.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Commons\\BaseAuditableEntity.cs",
               "RelativeDocumentMoniker": "Project.Core\\Entities\\Commons\\BaseAuditableEntity.cs",
@@ -404,25 +654,11 @@
               "RelativeToolTip": "Project.Core\\Entities\\Commons\\BaseAuditableEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:48:30.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T19:48:30.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\RegistrationBL\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Project.BL\\RegistrationBL\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\RegistrationBL\\ServiceRegistration.cs",
-              "RelativeToolTip": "Project.BL\\RegistrationBL\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:07:04.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 31,
               "Title": "WriteRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\WriteRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\WriteRepository.cs",
@@ -430,12 +666,11 @@
               "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\WriteRepository.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAswAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:55:47.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T19:55:47.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 32,
               "Title": "ReadRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\ReadRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\ReadRepository.cs",
@@ -443,12 +678,11 @@
               "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\ReadRepository.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAgwAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:54:48.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T19:54:48.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 33,
               "Title": "ProductUpdateDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\ProductDTOs\\ProductUpdateDTO.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\ProductDTOs\\ProductUpdateDTO.cs",
@@ -456,12 +690,11 @@
               "RelativeToolTip": "Project.BL\\DTOs\\ProductDTOs\\ProductUpdateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:12:08.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:12:08.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 34,
               "Title": "ProductResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\ProductDTOs\\ProductResponseDTO.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\ProductDTOs\\ProductResponseDTO.cs",
@@ -469,12 +702,11 @@
               "RelativeToolTip": "Project.BL\\DTOs\\ProductDTOs\\ProductResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:12:49.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:12:49.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 36,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\ExternalServices\\Abstractions\\IJwtService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\ExternalServices\\Abstractions\\IJwtService.cs",
@@ -482,12 +714,11 @@
               "RelativeToolTip": "Project.BL\\Services\\ExternalServices\\Abstractions\\IJwtService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:06:32.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T13:06:32.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 35,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Services\\ExternalServices\\Implementations\\JwtService.cs",
               "RelativeDocumentMoniker": "Project.BL\\Services\\ExternalServices\\Implementations\\JwtService.cs",
@@ -495,12 +726,11 @@
               "RelativeToolTip": "Project.BL\\Services\\ExternalServices\\Implementations\\JwtService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:06:41.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T13:06:41.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 59,
               "Title": "20250519141109_productTable.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Migrations\\20250519141109_productTable.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250519141109_productTable.cs",
@@ -508,12 +738,11 @@
               "RelativeToolTip": "Project.DAL\\Migrations\\20250519141109_productTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:11:09.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:11:09.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 38,
               "Title": "ProductWriteRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\Product\\ProductWriteRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\Product\\ProductWriteRepository.cs",
@@ -521,12 +750,11 @@
               "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\Product\\ProductWriteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:09:11.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:09:11.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 37,
               "Title": "WorkerCreateResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateResponseDTO.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateResponseDTO.cs",
@@ -534,12 +762,11 @@
               "RelativeToolTip": "Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:37:14.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T13:37:14.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 39,
               "Title": "ProductReadRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\Product\\ProductReadRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\Product\\ProductReadRepository.cs",
@@ -547,12 +774,11 @@
               "RelativeToolTip": "Project.DAL\\Repositories\\Implementations\\Product\\ProductReadRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:09:38.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:09:38.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 40,
               "Title": "IProductWriteRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Product\\IProductWriteRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\Product\\IProductWriteRepository.cs",
@@ -560,12 +786,11 @@
               "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\Product\\IProductWriteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:08:50.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:08:50.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 41,
               "Title": "IProductReadRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Product\\IProductReadRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\Product\\IProductReadRepository.cs",
@@ -573,25 +798,11 @@
               "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\Product\\IProductReadRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:08:13.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T14:08:13.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
-              "RelativeToolTip": "Project.DAL\\RegistrationDAL\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:08:21.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 44,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\appsettings.json",
               "RelativeDocumentMoniker": "Project.API\\appsettings.json",
@@ -603,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 43,
               "Title": "SwaggerExtensions.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Extensions\\SwaggerExtensions.cs",
               "RelativeDocumentMoniker": "Project.API\\Extensions\\SwaggerExtensions.cs",
@@ -615,20 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Contexts\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Project.DAL\\Contexts\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Contexts\\AppDbContext.cs",
-              "RelativeToolTip": "Project.DAL\\Contexts\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:39:55.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 45,
               "Title": "WorkerUpdateDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerUpdateDTO.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerUpdateDTO.cs",
@@ -640,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 42,
               "Title": "WorkerCreateDTO.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateDTO.cs",
               "RelativeDocumentMoniker": "Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateDTO.cs",
@@ -648,12 +846,11 @@
               "RelativeToolTip": "Project.BL\\DTOs\\WorkerDTOs\\WorkerCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T20:23:27.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T20:23:27.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 46,
               "Title": "Project.BL.csproj",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.BL\\Project.BL.csproj",
               "RelativeDocumentMoniker": "Project.BL\\Project.BL.csproj",
@@ -665,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 47,
               "Title": "PaginationParams.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Commons\\PaginationParams.cs",
               "RelativeDocumentMoniker": "Project.Core\\Entities\\Commons\\PaginationParams.cs",
@@ -677,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 48,
               "Title": "PagedResult.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Commons\\PagedResult.cs",
               "RelativeDocumentMoniker": "Project.Core\\Entities\\Commons\\PagedResult.cs",
@@ -689,7 +886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 49,
               "Title": "IWorkerReadRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerReadRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerReadRepository.cs",
@@ -701,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 50,
               "Title": "Project.API.http",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.API\\Project.API.http",
               "RelativeDocumentMoniker": "Project.API\\Project.API.http",
@@ -713,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 57,
               "Title": "20250518201939_workertable.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Migrations\\20250518201939_workertable.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250518201939_workertable.cs",
@@ -725,7 +922,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 52,
               "Title": "WorkerWriteRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\Worker\\WorkerWriteRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\Worker\\WorkerWriteRepository.cs",
@@ -737,7 +934,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 53,
               "Title": "IWorkerWriteRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerWriteRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\Worker\\IWorkerWriteRepository.cs",
@@ -749,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 51,
               "Title": "WorkerReadRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Implementations\\Worker\\WorkerReadRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Implementations\\Worker\\WorkerReadRepository.cs",
@@ -761,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 58,
               "Title": "20250518201050_init.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Migrations\\20250518201050_init.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Migrations\\20250518201050_init.cs",
@@ -773,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 54,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.Core\\Entities\\Commons\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Project.Core\\Entities\\Commons\\BaseEntity.cs",
@@ -785,7 +982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 55,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\IRepository.cs",
@@ -797,7 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 56,
               "Title": "IWriteRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
               "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\IWriteRepository.cs",
@@ -806,18 +1003,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T19:46:25.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "IReadRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
-              "RelativeDocumentMoniker": "Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
-              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project\\Project.API\\Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
-              "RelativeToolTip": "Project.DAL\\Repositories\\Abstractions\\IReadRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T19:46:15.688Z"
             }
           ]
         }

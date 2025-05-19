@@ -14,6 +14,8 @@ namespace Project.BL.Services.InternalServices.Abstractions
         Task<PagedResult<Product>> GetPaginatedAsync(PaginationParams @params);
         Task<ApiResponse<bool>> DeleteAsync(int id);
         Task<ApiResponse<ProductReadDTO>> GetByIdAsync(int id);
-        
+        Task<ICollection<ProductReadDTO>> SearchProductsAsync(string title);
+
+
     }
 }

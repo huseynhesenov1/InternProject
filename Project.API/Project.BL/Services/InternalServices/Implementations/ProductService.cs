@@ -1,4 +1,5 @@
 ﻿using Project.BL.DTOs.ProductDTOs;
+using Project.BL.DTOs.WorkerDTOs;
 using Project.BL.Models;
 using Project.BL.Services.InternalServices.Abstractions;
 using Project.Core.Entities;
@@ -59,9 +60,10 @@ namespace Project.BL.Services.InternalServices.Implementations
             Id = p.Id,
             Title = p.Title,
             Price = p.Price,
+            OldPrice = p.Price,
             CreatedAt = p.CreatedAt,
             UpdatedAt = p.UpdatedAt,
-          
+
         }).ToList();
             return productReadDTOs;
         }
@@ -113,9 +115,10 @@ namespace Project.BL.Services.InternalServices.Implementations
                     Id = product.Id,
                     Title = product.Title,
                     Price = product.Price,
+                    OldPrice = product.Price,
                     CreatedAt = product.CreatedAt,
                     UpdatedAt = product.UpdatedAt,
-                    
+
                 };
 
                 return ApiResponse<ProductReadDTO>.Success(productReadDTO, "Product retrieved successfully");
@@ -126,6 +129,27 @@ namespace Project.BL.Services.InternalServices.Implementations
             }
         }
 
-       
+        public async Task<ICollection<ProductReadDTO>> SearchProductsAsync(string title)
+        {
+            var query = await _productReadRepository.GetAllAsync(false);
+
+            query = query
+            .Where(p =>
+            (string.IsNullOrWhiteSpace(title) ||
+             p.Title.Contains(title, StringComparison.OrdinalIgnoreCase))).ToList();
+            var workerDTOs = query.Select(p => new ProductReadDTO
+            {
+                Id = p.Id,
+                Title = p.Title,
+                Price = p.Price,
+                OldPrice = p.Price,
+                CreatedAt = p.CreatedAt,
+                UpdatedAt = p.UpdatedAt,
+
+            }).ToList();
+            return workerDTOs;
+        }
+
+
     }
 }
