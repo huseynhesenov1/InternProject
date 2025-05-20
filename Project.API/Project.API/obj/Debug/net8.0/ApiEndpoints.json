@@ -1,5 +1,72 @@
 [
   {
+    "ContainingType": "Project.API.Controllers.CampaignController",
+    "Method": "Create",
+    "RelativePath": "api/Campaign",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "campaignCreateDTO",
+        "Type": "Project.BL.DTOs.CampaignDTOs.CampaignCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.CampaignController",
+    "Method": "GetAll",
+    "RelativePath": "api/Campaign",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[Project.BL.DTOs.CampaignDTOs.CampaignReadDTO, Project.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.CampaignController",
+    "Method": "Update",
+    "RelativePath": "api/Campaign/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "productUpdateDTO",
+        "Type": "Project.BL.DTOs.CampaignDTOs.CampaignUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Project.API.Controllers.DistrictController",
     "Method": "GetAll",
     "RelativePath": "api/District",

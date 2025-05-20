@@ -22,6 +22,56 @@ namespace Project.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Project.Core.Entities.Campaign", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("DiscountPercent")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("DistrictId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DistrictId");
+
+                    b.ToTable("Campaigns");
+                });
+
             modelBuilder.Entity("Project.Core.Entities.District", b =>
                 {
                     b.Property<int>("Id")
@@ -59,6 +109,9 @@ namespace Project.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("CampaignId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -79,6 +132,8 @@ namespace Project.DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CampaignId");
 
                     b.ToTable("Products");
                 });
@@ -124,6 +179,26 @@ namespace Project.DAL.Migrations
                     b.ToTable("Workers");
                 });
 
+            modelBuilder.Entity("Project.Core.Entities.Campaign", b =>
+                {
+                    b.HasOne("Project.Core.Entities.District", "District")
+                        .WithMany()
+                        .HasForeignKey("DistrictId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("District");
+                });
+
+            modelBuilder.Entity("Project.Core.Entities.Product", b =>
+                {
+                    b.HasOne("Project.Core.Entities.Campaign", "Campaign")
+                        .WithMany("Products")
+                        .HasForeignKey("CampaignId");
+
+                    b.Navigation("Campaign");
+                });
+
             modelBuilder.Entity("Project.Core.Entities.Worker", b =>
                 {
                     b.HasOne("Project.Core.Entities.District", "District")
@@ -133,6 +208,11 @@ namespace Project.DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("District");
+                });
+
+            modelBuilder.Entity("Project.Core.Entities.Campaign", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Project.Core.Entities.District", b =>

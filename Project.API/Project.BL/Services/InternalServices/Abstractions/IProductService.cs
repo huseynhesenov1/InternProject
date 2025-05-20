@@ -16,6 +16,5 @@ namespace Project.BL.Services.InternalServices.Abstractions
         Task<ApiResponse<ProductReadDTO>> GetByIdAsync(int id);
         Task<ICollection<ProductReadDTO>> SearchProductsAsync(string title);
 
-
     }
 }
