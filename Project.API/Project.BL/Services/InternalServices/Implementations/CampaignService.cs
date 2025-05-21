@@ -13,17 +13,14 @@ namespace Project.BL.Services.InternalServices.Implementations
     {
         private readonly ICampaignReadRepository _campaignReadRepository;
         private readonly ICampaignWriteRepository _campaignWriteRepository;
-        private readonly IDistrictReadRepository _districtReadRepository;
-        private readonly IDistrictWriteRepository _districtWriteRepository;
+       
         public CampaignService(ICampaignReadRepository campaignReadRepository,
-            ICampaignWriteRepository campaignWriteRepository,
-            IDistrictReadRepository districtReadRepository,
-            IDistrictWriteRepository districtWriteRepository)
+            ICampaignWriteRepository campaignWriteRepository
+            )
         {
             _campaignReadRepository = campaignReadRepository;
             _campaignWriteRepository = campaignWriteRepository;
-            _districtReadRepository = districtReadRepository;
-            _districtWriteRepository = districtWriteRepository;
+           
         }
 
         public async Task<ApiResponse<int>> CreateAsync(CampaignCreateDTO campaignCreateDTO)
@@ -70,19 +67,18 @@ namespace Project.BL.Services.InternalServices.Implementations
 
 
 
-        public async Task<int> UpdateAsync(int id, CampaignUpdateDTO campaignUpdateDTO)
+       
+        public async Task<ApiResponse<int>> UpdateAsync(int id, CampaignUpdateDTO campaignUpdateDTO)
         {
-            // Əvvəlcə mövcud kampaniyanı tap
             var existingCampaign = await _campaignReadRepository.GetByIdAsync(id, true);
             if (existingCampaign == null || existingCampaign.IsDeleted)
             {
-                throw new InvalidOperationException("Yenilənəcək kampaniya tapılmadı.");
+                return ApiResponse<int>.Fail("Yenilənəcək kampaniya tapılmadı.");
             }
 
             var newStartDate = campaignUpdateDTO.StartDate;
             var newEndDate = campaignUpdateDTO.EndDate;
 
-            // Digər bütün kampaniyaları al, yalnız özündən fərqli olanları yoxla
             var otherCampaigns = await _campaignReadRepository.GetAllAsync(false);
             var conflictingCampaign = otherCampaigns.FirstOrDefault(c =>
                 c.Id != id && !c.IsDeleted &&
@@ -93,11 +89,11 @@ namespace Project.BL.Services.InternalServices.Implementations
 
             if (conflictingCampaign != null)
             {
-                throw new InvalidOperationException(
-                    $"Yenilənmə baş tutmadı. '{conflictingCampaign.Name}' adlı kampaniya ilə tarixlər üst-üstə düşür.");
+                return ApiResponse<int>.Fail(
+                    "Yenilənmə baş tutmadı.",
+                    $"'{conflictingCampaign.Name}' adlı kampaniya ilə tarixlər üst-üstə düşür.");
             }
 
-            // Yenilənəcək sahələr
             existingCampaign.Name = campaignUpdateDTO.Name;
             existingCampaign.Description = campaignUpdateDTO.Description;
             existingCampaign.StartDate = campaignUpdateDTO.StartDate;
@@ -105,10 +101,11 @@ namespace Project.BL.Services.InternalServices.Implementations
             existingCampaign.DiscountPercent = campaignUpdateDTO.DiscountPercent;
             existingCampaign.DistrictId = campaignUpdateDTO.DistrictId;
             existingCampaign.UpdatedAt = DateTime.UtcNow;
+
             _campaignWriteRepository.Update(existingCampaign);
             await _campaignWriteRepository.SaveChangeAsync();
 
-            return existingCampaign.Id;
+            return ApiResponse<int>.Success(existingCampaign.Id, "Kampaniya uğurla yeniləndi.");
         }
 
 
@@ -120,6 +117,7 @@ namespace Project.BL.Services.InternalServices.Implementations
         .Select(product => new CampaignReadDTO
         {
             Id = product.Id,
+            IsActive = product.IsActive,
             Name = product.Name,
             Description = product.Description,
             StartDate = product.StartDate,
@@ -146,6 +144,7 @@ namespace Project.BL.Services.InternalServices.Implementations
                 CampaignReadDTO productReadDTO = new CampaignReadDTO()
                 {
                     Id = product.Id,
+                    IsActive = product.IsActive,
                     Name = product.Name,
                     Description = product.Description,
                     StartDate = product.StartDate,
@@ -174,7 +173,7 @@ namespace Project.BL.Services.InternalServices.Implementations
                 {
                     return ApiResponse<bool>.Fail("Campaign not found", "Invalid Campaign ID");
                 }
-
+                
                 _campaignWriteRepository.SoftDelete(worker);
                 await _campaignWriteRepository.SaveChangeAsync();
 
@@ -196,6 +195,56 @@ namespace Project.BL.Services.InternalServices.Implementations
                 .ToList();
             int totalCount = allCategories.Count;
             return new PagedResult<Campaign>(filtered, totalCount, @params.PageNumber, @params.PageSize);
+        }
+
+        public async Task<ApiResponse<bool>> EnableAsync(int id)
+        {
+            try
+            {
+                var worker = await _campaignReadRepository.GetByIdAsync(id, true);
+                if (worker == null || worker.IsDeleted )
+                {
+                    return ApiResponse<bool>.Fail("Campaign not found", "Invalid Campaign ID");
+                }
+                if (worker.IsActive)
+                {
+                    return ApiResponse<bool>.Fail("Campaign Is Active", "Campaign Is Active");
+                }
+
+                worker.IsActive = true;
+                _campaignWriteRepository.Update(worker);
+                await _campaignWriteRepository.SaveChangeAsync();
+
+                return ApiResponse<bool>.Success(true, "Campaign enabled successfully");
+            }
+            catch (Exception ex)
+            {
+                return ApiResponse<bool>.Fail(ex.Message, "Error enabled Campaign");
+            }
+        }
+        public async Task<ApiResponse<bool>> DisableAsync(int id)
+        {
+            try
+            {
+                var worker = await _campaignReadRepository.GetByIdAsync(id, true);
+                if (worker == null || worker.IsDeleted)
+                {
+                    return ApiResponse<bool>.Fail("Campaign not found", "Invalid Campaign ID");
+                }
+                if (!worker.IsActive)
+                {
+                    return ApiResponse<bool>.Fail("Campaign Is not Active", "Campaign Is not Active");
+                }
+                worker.IsActive = false;
+                _campaignWriteRepository.Update(worker);
+                await _campaignWriteRepository.SaveChangeAsync();
+
+                return ApiResponse<bool>.Success(true, "Campaign disabled successfully");
+            }
+            catch (Exception ex)
+            {
+                return ApiResponse<bool>.Fail(ex.Message, "Error disabled Campaign");
+            }
         }
     }
 }

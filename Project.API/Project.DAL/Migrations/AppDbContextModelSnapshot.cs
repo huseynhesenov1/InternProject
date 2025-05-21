@@ -101,6 +101,39 @@ namespace Project.DAL.Migrations
                     b.ToTable("Districts");
                 });
 
+            modelBuilder.Entity("Project.Core.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ProductCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("Project.Core.Entities.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -190,6 +223,17 @@ namespace Project.DAL.Migrations
                     b.Navigation("District");
                 });
 
+            modelBuilder.Entity("Project.Core.Entities.Order", b =>
+                {
+                    b.HasOne("Project.Core.Entities.Product", "Product")
+                        .WithMany("Orders")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Project.Core.Entities.Product", b =>
                 {
                     b.HasOne("Project.Core.Entities.Campaign", "Campaign")
@@ -218,6 +262,11 @@ namespace Project.DAL.Migrations
             modelBuilder.Entity("Project.Core.Entities.District", b =>
                 {
                     b.Navigation("Workers");
+                });
+
+            modelBuilder.Entity("Project.Core.Entities.Product", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

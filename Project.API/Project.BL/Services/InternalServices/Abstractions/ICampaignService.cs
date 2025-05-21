@@ -9,10 +9,12 @@ namespace Project.BL.Services.InternalServices.Abstractions
    public interface ICampaignService
     {
         Task<ApiResponse<int>> CreateAsync(CampaignCreateDTO campaignCreateDTO);
-        Task<int> UpdateAsync(int Id, CampaignUpdateDTO campaignUpdateDTO);
+        Task<ApiResponse<int>> UpdateAsync(int id, CampaignUpdateDTO campaignUpdateDTO);
         Task<ICollection<CampaignReadDTO>> GetAllAsync();
         Task<PagedResult<Campaign>> GetPaginatedAsync(PaginationParams @params);
         Task<ApiResponse<bool>> DeleteAsync(int id);
+        Task<ApiResponse<bool>> EnableAsync(int id);
+        Task<ApiResponse<bool>> DisableAsync(int id);
         Task<ApiResponse<CampaignReadDTO>> GetByIdAsync(int id);
     }
 }

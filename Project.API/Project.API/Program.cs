@@ -37,23 +37,20 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("MobileApp", builder =>
     {
-        builder.WithOrigins("*") // In production, replace with your mobile app's domain
+        builder.WithOrigins("*") 
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
 });
 
-// Add DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MsSQL")));
-
-// Register services
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddServices();
 builder.Services.AddRepos();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

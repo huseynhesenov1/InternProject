@@ -8,5 +8,6 @@ namespace Project.Core.Entities
         public decimal Price { get; set; }
         public Campaign? Campaign { get; set; }
         public int? CampaignId { get; set; }
+        public ICollection<Order> Orders { get; set; }  
     }
 }
