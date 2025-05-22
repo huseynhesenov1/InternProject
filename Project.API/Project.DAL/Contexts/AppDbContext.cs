@@ -11,5 +11,6 @@ namespace Project.DAL.Contexts
         public DbSet<District> Districts { get; set; }
         public DbSet<Campaign> Campaigns { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<ProductDistrictPrice> ProductDistrictPrices { get; set; }
     }   
 }

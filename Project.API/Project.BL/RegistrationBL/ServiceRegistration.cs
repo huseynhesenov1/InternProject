@@ -16,6 +16,7 @@ namespace Project.BL.RegistrationBL
             services.AddScoped<IDistrictService, DistrictService>();
             services.AddScoped<ICampaignService, CampaignService>();
             services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IProductDistrictService , ProductDistrictService>();
             services.AddScoped<IJwtService, JwtService>();
         }
     }

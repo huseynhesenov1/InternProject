@@ -437,6 +437,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Project.API.Controllers.ProductDistrictController",
+    "Method": "Create",
+    "RelativePath": "api/ProductDistrict/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productDistrictPriceCreateDTO",
+        "Type": "Project.BL.DTOs.ProductDistrictPriceDTOs.ProductDistrictPriceCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.ProductDistrictController",
+    "Method": "GetAll",
+    "RelativePath": "api/ProductDistrict/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Project.API.Controllers.WorkerController",
     "Method": "Create",
     "RelativePath": "api/Worker",

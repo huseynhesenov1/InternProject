@@ -171,6 +171,44 @@ namespace Project.DAL.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("Project.Core.Entities.ProductDistrictPrice", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DistrictId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DistrictId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductDistrictPrices");
+                });
+
             modelBuilder.Entity("Project.Core.Entities.Worker", b =>
                 {
                     b.Property<int>("Id")
@@ -243,6 +281,25 @@ namespace Project.DAL.Migrations
                     b.Navigation("Campaign");
                 });
 
+            modelBuilder.Entity("Project.Core.Entities.ProductDistrictPrice", b =>
+                {
+                    b.HasOne("Project.Core.Entities.District", "District")
+                        .WithMany("ProductDistrictPrices")
+                        .HasForeignKey("DistrictId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Project.Core.Entities.Product", "Product")
+                        .WithMany("ProductDistrictPrices")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("District");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Project.Core.Entities.Worker", b =>
                 {
                     b.HasOne("Project.Core.Entities.District", "District")
@@ -261,12 +318,16 @@ namespace Project.DAL.Migrations
 
             modelBuilder.Entity("Project.Core.Entities.District", b =>
                 {
+                    b.Navigation("ProductDistrictPrices");
+
                     b.Navigation("Workers");
                 });
 
             modelBuilder.Entity("Project.Core.Entities.Product", b =>
                 {
                     b.Navigation("Orders");
+
+                    b.Navigation("ProductDistrictPrices");
                 });
 #pragma warning restore 612, 618
         }

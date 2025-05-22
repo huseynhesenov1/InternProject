@@ -9,5 +9,6 @@ namespace Project.Core.Entities
         public Campaign? Campaign { get; set; }
         public int? CampaignId { get; set; }
         public ICollection<Order> Orders { get; set; }  
+        public ICollection<ProductDistrictPrice> ProductDistrictPrices { get; set; }
     }
 }
