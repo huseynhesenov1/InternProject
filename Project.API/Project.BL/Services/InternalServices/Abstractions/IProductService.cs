@@ -11,6 +11,7 @@ namespace Project.BL.Services.InternalServices.Abstractions
         Task<int> CreateAsync(ProductCreateDTO productCreateDTO);
         Task<int> UpdateAsync(int Id ,ProductUpdateDTO productUpdateDTO);
         Task<ICollection<ProductReadDTO>> GetAllAsync();
+      
         Task<PagedResult<Product>> GetPaginatedAsync(PaginationParams @params);
         Task<ApiResponse<bool>> DeleteAsync(int id);
         Task<ApiResponse<ProductReadDTO>> GetByIdAsync(int id);

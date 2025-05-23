@@ -4,6 +4,7 @@ using Project.BL.Models;
 using Project.BL.Services.InternalServices.Abstractions;
 using Project.Core.Entities;
 using Project.Core.Entities.Commons;
+using Project.DAL.Repositories.Abstractions.Campaign;
 using Project.DAL.Repositories.Abstractions.Product;
 
 namespace Project.BL.Services.InternalServices.Implementations
@@ -12,11 +13,12 @@ namespace Project.BL.Services.InternalServices.Implementations
     {
         private readonly IProductReadRepository _productReadRepository;
         private readonly IProductWriteRepository _productWriteRepository;
-
-        public ProductService(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
+        private readonly ICampaignReadRepository _campaignReadRepository;
+        public ProductService(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, ICampaignReadRepository campaignReadRepository)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
+            _campaignReadRepository = campaignReadRepository;
         }
 
         public async Task<int> CreateAsync(ProductCreateDTO productCreateDTO)
@@ -51,20 +53,46 @@ namespace Project.BL.Services.InternalServices.Implementations
             return newProduct.Id;
         }
 
+        
         public async Task<ICollection<ProductReadDTO>> GetAllAsync()
         {
-            ICollection<Product> products = await _productReadRepository.GetAllAsync(false);
-            List<ProductReadDTO> productReadDTOs = products
-        .Select(p => new ProductReadDTO
-        {
-            Id = p.Id,
-            Title = p.Title,
-            Price = p.Price,
-            OldPrice = p.Price,
-            CreatedAt = p.CreatedAt,
-            UpdatedAt = p.UpdatedAt,
+            var products = await _productReadRepository.GetAllAsync(false);
+            var campaigns = await _campaignReadRepository.GetAllAsync(false);
+            var currentTime = DateTime.UtcNow.AddHours(4);
 
-        }).ToList();
+            
+            var activeCampaign = campaigns.FirstOrDefault(c =>
+                c.IsActive &&
+                c.StartDate <= currentTime &&
+                c.EndDate >= currentTime);
+
+            List<ProductReadDTO> productReadDTOs = products.Select(p =>
+            {
+                decimal newPrice = p.Price; 
+                string campaignName = string.Empty;
+                int campaignId =-1;
+                //int distirctId = -1; // Kampaniya ID
+                
+                if (activeCampaign != null)
+                {
+                    newPrice = p.Price * (1 - activeCampaign.DiscountPercent / 100);
+                    campaignName = activeCampaign.Name;
+                    campaignId = activeCampaign.Id;
+                }
+
+                return new ProductReadDTO
+                {
+                    Id = p.Id,
+                    Title = p.Title,
+                    Price = newPrice, 
+                    OldPrice = p.Price, 
+                    CampaignName = campaignName,
+                    CampaignId = campaignId,
+                    CreatedAt = p.CreatedAt,
+                    UpdatedAt = p.UpdatedAt
+                };
+            }).ToList();
+
             return productReadDTOs;
         }
 

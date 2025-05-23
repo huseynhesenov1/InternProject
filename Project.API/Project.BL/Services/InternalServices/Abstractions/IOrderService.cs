@@ -2,6 +2,7 @@
 using Project.BL.Models;
 using Project.Core.Entities.Commons;
 using Project.Core.Entities;
+using Project.BL.DTOs.ProductDTOs;
 
 namespace Project.BL.Services.InternalServices.Abstractions
 {
@@ -9,6 +10,7 @@ namespace Project.BL.Services.InternalServices.Abstractions
     {
         Task<ApiResponse<OrderCreateResponseDTO>> CreateAsync(OrderCreateDTO dto);
         Task<ICollection<OrderReadDTO>> GetAllAsync();
+        
         Task<PagedResult<OrderReadDTO>> GetPaginatedAsync(PaginationParams @params);
 
     }

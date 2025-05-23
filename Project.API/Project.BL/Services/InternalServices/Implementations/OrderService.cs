@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Project.Core.Entities;
 using System.Security.Claims;
 using Project.Core.Entities.Commons;
+using Project.BL.DTOs.ProductDTOs;
 namespace Project.BL.Services.InternalServices.Implementations
 {
     public class OrderService : IOrderService
@@ -170,6 +171,13 @@ namespace Project.BL.Services.InternalServices.Implementations
                     CreatedAt = o.CreatedAt
                 };
             }).ToList();
+        }
+
+
+
+        Task<ICollection<OrderReadDTO>> IOrderService.GetAllAsync()
+        {
+            throw new NotImplementedException();
         }
     }
 }

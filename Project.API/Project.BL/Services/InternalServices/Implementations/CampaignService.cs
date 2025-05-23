@@ -153,7 +153,6 @@ namespace Project.BL.Services.InternalServices.Implementations
                     DiscountPercent = product.DiscountPercent,
                     UpdatedAt = product.UpdatedAt,
                     CreatedAt = product.CreatedAt,
-
                 };
 
                 return ApiResponse<CampaignReadDTO>.Success(productReadDTO, "Campaign retrieved successfully");

@@ -1628,6 +1628,14 @@
             "type": "number",
             "format": "double"
           },
+          "campaignId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "campaignName": {
+            "type": "string",
+            "nullable": true
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
