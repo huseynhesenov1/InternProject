@@ -271,6 +271,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Project.API.Controllers.OrderController",
+    "Method": "Create",
+    "RelativePath": "api/Order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderCreateDTO",
+        "Type": "Project.BL.DTOs.OrderDTOs.OrderCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.OrderController",
+    "Method": "GetAll",
+    "RelativePath": "api/Order",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Project.API.Controllers.ProductController",
     "Method": "Create",
     "RelativePath": "api/Product",
@@ -439,7 +465,7 @@
   {
     "ContainingType": "Project.API.Controllers.ProductDistrictController",
     "Method": "Create",
-    "RelativePath": "api/ProductDistrict/create",
+    "RelativePath": "api/ProductDistrict",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -455,7 +481,7 @@
   {
     "ContainingType": "Project.API.Controllers.ProductDistrictController",
     "Method": "GetAll",
-    "RelativePath": "api/ProductDistrict/getall",
+    "RelativePath": "api/ProductDistrict",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

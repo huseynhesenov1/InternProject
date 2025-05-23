@@ -455,6 +455,47 @@
         }
       }
     },
+    "/api/Order": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Product": {
       "post": {
         "tags": [
@@ -733,7 +774,7 @@
         }
       }
     },
-    "/api/ProductDistrict/create": {
+    "/api/ProductDistrict": {
       "post": {
         "tags": [
           "ProductDistrict"
@@ -762,9 +803,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/ProductDistrict/getall": {
+      },
       "get": {
         "tags": [
           "ProductDistrict"
@@ -1370,6 +1409,31 @@
           "product": {
             "$ref": "#/components/schemas/Product"
           },
+          "productId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "workerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "worker": {
+            "$ref": "#/components/schemas/Worker"
+          },
+          "totalPrice": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrderCreateDTO": {
+        "type": "object",
+        "properties": {
           "productId": {
             "type": "integer",
             "format": "int32"
