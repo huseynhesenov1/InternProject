@@ -306,3 +306,6 @@ C:\Users\ACER\Desktop\Project\Project.API\Project.API\obj\Debug\net8.0\staticweb
 C:\Users\ACER\Desktop\Project\Project.API\Project.API\obj\Debug\net8.0\Project..EE0E83FA.Up2Date
 C:\Users\ACER\Desktop\Project\Project.API\Project.API\obj\Debug\net8.0\Project.API.genruntimeconfig.cache
 C:\Users\ACER\Desktop\Project\Project.API\Project.API\obj\Debug\net8.0\ref\Project.API.dll
+C:\Users\ACER\Desktop\Project\Project.API\Project.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\ACER\Desktop\Project\Project.API\Project.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ACER\Desktop\Project\Project.API\Project.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll

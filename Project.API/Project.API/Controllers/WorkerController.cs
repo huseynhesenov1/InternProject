@@ -24,7 +24,15 @@ namespace Project.API.Controllers
         [HttpPost]
         public async Task<ApiResponse<WorkerCreateResponseDTO>> Create([FromBody] WorkerCreateDTO workerCreateDTO)
         {
-            return await _workerService.CreateAsync(workerCreateDTO);
+            try
+            {
+                  return await _workerService.CreateAsync(workerCreateDTO);
+
+            }
+            catch(Exception ex)
+            {
+                return ApiResponse<WorkerCreateResponseDTO>.Fail(ex.Message, "Error");
+            }
         }
 
         [HttpPut("{id}")]

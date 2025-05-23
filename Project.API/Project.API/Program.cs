@@ -6,13 +6,14 @@ using Project.API.Extensions;
 using Project.BL.RegistrationBL;
 using Project.DAL.Contexts;
 using Project.DAL.RegistrationDAL;
+using FluentValidation;
+using Project.BL.DTOs.WorkerDTOs;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerWithJwt();
 
@@ -33,6 +34,10 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Securitykey"]))
     };
 });
+
+
+builder.Services.AddControllers()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<WorkerCreateDTOValidator>());
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("MobileApp", builder =>
@@ -59,10 +64,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Use CORS
 app.UseCors("MobileApp");
 
-// Use Authentication & Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 
