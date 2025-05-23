@@ -297,6 +297,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Project.API.Controllers.OrderController",
+    "Method": "GetPaginated",
+    "RelativePath": "api/Order/Paginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Project.API.Controllers.ProductController",
     "Method": "Create",
     "RelativePath": "api/Product",

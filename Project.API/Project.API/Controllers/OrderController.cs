@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Project.BL.DTOs.OrderDTOs;
 using Project.BL.Services.InternalServices.Abstractions;
+using Project.BL.Services.InternalServices.Implementations;
+using Project.Core.Entities.Commons;
 
 namespace Project.API.Controllers
 {
@@ -39,6 +41,12 @@ namespace Project.API.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+        [HttpGet("Paginated")]
+        public async Task<IActionResult> GetPaginated([FromQuery] PaginationParams @params)
+        {
+            var result = await _orderService.GetPaginatedAsync(@params);
+            return Ok(result);
         }
     }
 }

@@ -35,7 +35,7 @@ namespace Project.BL.Services.ExternalServices.Implementations
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddYears(1), // Token valid for 1 year
+                expires: DateTime.UtcNow.AddYears(1), 
                 signingCredentials: credentials
             );
 

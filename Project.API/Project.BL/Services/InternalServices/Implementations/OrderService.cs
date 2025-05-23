@@ -8,6 +8,7 @@ using Project.DAL.Repositories.Abstractions.Worker;
 using Microsoft.AspNetCore.Http;
 using Project.Core.Entities;
 using System.Security.Claims;
+using Project.Core.Entities.Commons;
 namespace Project.BL.Services.InternalServices.Implementations
 {
     public class OrderService : IOrderService
@@ -54,7 +55,6 @@ namespace Project.BL.Services.InternalServices.Implementations
 
                 decimal finalPrice = product.Price;
 
-                // Aktiv kampaniyanı tap
                 var campaigns = await _campaignReadRepository.GetAllAsync(false);
                 var activeCampaign = campaigns.FirstOrDefault(c =>
                     c.IsActive &&
@@ -67,7 +67,6 @@ namespace Project.BL.Services.InternalServices.Implementations
                     finalPrice *= (1 - activeCampaign.DiscountPercent / 100m);
                 }
 
-                // Rayon üzrə qiymət endirimi tətbiq et
                 var districtPriceEntity = product.ProductDistrictPrices
                     .FirstOrDefault(p => p.DistrictId == worker.DistrictId);
 
@@ -109,24 +108,67 @@ namespace Project.BL.Services.InternalServices.Implementations
         }
 
 
+        public async Task<PagedResult<OrderReadDTO>> GetPaginatedAsync(PaginationParams @params)
+        {
+            var orders = await _orderReadRepository.GetAllAsync(false, "Product");
+            var campaigns = await _campaignReadRepository.GetAllAsync(false);
 
+            var orderDTOs = orders.Select(o =>
+            {
+                var activeCampaign = campaigns.FirstOrDefault(c =>
+                    c.IsActive &&
+                    c.StartDate <= o.CreatedAt &&
+                    c.EndDate >= o.CreatedAt);
+
+                return new OrderReadDTO
+                {
+                    Id = o.Id,
+                    ProductId = o.ProductId,
+                    ProductCount = o.ProductCount,
+                    ProductTitle = o.Product.Title,
+                    ProductPrice = o.Product.Price,
+                    CampaignId = activeCampaign?.Id ?? 0,
+                    CampaignName = activeCampaign?.Name ?? string.Empty,
+                    TotalPrice = o.TotalPrice,
+                    CreatedAt = o.CreatedAt
+                };
+            }).ToList();
+
+            int totalCount = orderDTOs.Count;
+
+            var paginatedDTOs = orderDTOs
+                .Skip((@params.PageNumber - 1) * @params.PageSize)
+                .Take(@params.PageSize)
+                .ToList();
+
+            return new PagedResult<OrderReadDTO>(paginatedDTOs, totalCount, @params.PageNumber, @params.PageSize);
+        }
 
 
         public async Task<ICollection<OrderReadDTO>> GetAllAsync()
         {
-            ICollection<Order> orders = await _orderReadRepository.GetAllAsync(false, "Product", "Campaign");
+            var orders = await _orderReadRepository.GetAllAsync(false, "Product");
+            var campaigns = await _campaignReadRepository.GetAllAsync(false);
 
-            return orders.Select(o => new OrderReadDTO
+            return orders.Select(o =>
             {
-                Id = o.Id,
-                ProductId = o.ProductId,
-                ProductCount = o.ProductCount,
-                ProductTitle = o.Product.Title,
-                ProductPrice = o.Product.Price,
-                CampaignId = o.Product.CampaignId ?? 0,
-                CampaignName = o.Product.Campaign?.Name ?? string.Empty,
-                TotalPrice = o.TotalPrice,
-                CreatedAt = o.CreatedAt
+                var activeCampaign = campaigns.FirstOrDefault(c =>
+                    c.IsActive &&
+                    c.StartDate <= o.CreatedAt &&
+                    c.EndDate >= o.CreatedAt);
+
+                return new OrderReadDTO
+                {
+                    Id = o.Id,
+                    ProductId = o.ProductId,
+                    ProductCount = o.ProductCount,
+                    ProductTitle = o.Product.Title,
+                    ProductPrice = o.Product.Price,
+                    CampaignId = activeCampaign?.Id ?? 0,
+                    CampaignName = activeCampaign?.Name ?? string.Empty,
+                    TotalPrice = o.TotalPrice,
+                    CreatedAt = o.CreatedAt
+                };
             }).ToList();
         }
     }
